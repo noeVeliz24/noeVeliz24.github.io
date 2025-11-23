@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Aérea China → Bolivia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Calculadora Aérea China → Bolivia</h2>
+
+    <div class="form-grid">
+
+        <div class="form-group">
+            <label>Precio Unitario (USD):</label>
+            <input type="number" id="precioUnitario" value="0">
+        </div>
+
+        <div class="form-group">
+            <label>Cantidad de Productos:</label>
+            <input type="number" id="cantidadProductos" value="">
+        </div>
+
+        <div class="form-group">
+            <label>Otros Gastos (USD):</label>
+            <input type="number" id="otrosGastos" value="0">
+        </div>
+
+        <div class="form-group">
+            <label>Flete Aéreo (USD):</label>
+            <input type="number" id="flete" value="">
+        </div>
+
+        <div class="form-group">
+            <label>Porcentaje de Seguro (%):</label>
+            <input type="number" id="seguro" value="2">
+        </div>
+
+        <div class="form-group">
+            <label>Gravamen Arancelario (GA %):</label>
+            <input type="number" id="ga" value="">
+        </div>
+
+        <div class="form-group">
+            <label>Tipo de Cambio Paralelo (BOB/USD):</label>
+            <input type="number" id="tipoCambio" value="12.50">
+        </div>
+
+    </div>
+
+    <button class="btn" onclick="calcular()">Calcular</button>
+
+    <div id="resultados"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
