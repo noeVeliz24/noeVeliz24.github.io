@@ -1,72 +1,79 @@
 body {
-    background: #0d0d0d;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: #e5e5e5;
-    margin: 0;
+    background-color: #111;
+    color: #0dad8a;
+    font-family: 'Arial', sans-serif;
     padding: 20px;
 }
 
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #1cb3ca;
+}
+
 .container {
+    background: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
     max-width: 750px;
     margin: auto;
-    background: #131313;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 25px rgba(0,0,0,0.6);
-}
-
-h2 {
-    color: #4db8ff;
-    margin-bottom: 25px;
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-}
-
-.form-group label {
-    font-size: 14px;
-    color: #bfbfbf;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    background: #1f1f1f;
-    border: 1px solid #333;
-    border-radius: 8px;
-    color: white;
-}
-
-.btn {
-    width: 100%;
-    padding: 14px;
-    margin-top: 25px;
-    background: #54a290;
-    color: #222;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 17px;
-}
-
-.btn:hover {
-    background: #3f8360;
+    box-shadow: 0px 0px 12px #000;
 }
 
 .section-title {
-    margin-top: 35px;
-    font-size: 20px;
-    color: #4db8ff;
+    font-size: 22px;
+    margin-top: 15px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 4px;
+    color: #f1f7f6;
+}
+
+.input-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.input-grid .full {
+    grid-column: span 2;
+}
+
+label {
+    color: #c9d4d6;
+    font-size: 15px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background: #222;
+    color: #fff;
+}
+
+.button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 14px;
+    background: #2ed0bd;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #add2cf;
 }
 
 .result-box {
-    background: #1a1a1a;
+    margin-top: 20px;
     padding: 15px;
-    border-left: 4px solid #4db8ff;
-    margin-top: 10px;
+    background: #222;
     border-radius: 8px;
+    line-height: 26px;
+    color: #e5e5e5;
 }

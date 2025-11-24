@@ -3,61 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Aérea China → Bolivia</title>
+    <title>Calculadora Marítima</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="container">
+    <h1 class="title">Calculadora de Importación Marítima</h1>
 
-    <h2>Calculadora Aérea China → Bolivia</h2>
+    <div class="container">
 
-    <div class="form-grid">
+        <h2 class="section-title">Datos de Entrada</h2>
 
-        <div class="form-group">
-            <label>Precio Unitario (USD):</label>
-            <input type="number" id="precioUnitario" value="0">
+        <div class="input-grid">
+            <div>
+                <label>Precio Unitario (USD):</label>
+                <input id="precioUnitario" type="number" placeholder="Ingresa el precio unitario">
+            </div>
+
+            <div>
+                <label>Cantidad de Productos:</label>
+                <input id="cantidadProductos" type="number" placeholder="Ingresa la cantidad">
+            </div>
+
+            <div>
+                <label>Otros Gastos (USD):</label>
+                <input id="otrosGastos" type="number" placeholder="Ingresa otros gastos">
+            </div>
+
+            <div>
+                <label>Flete 1 (USD):</label>
+                <input id="flete1" type="number" placeholder="Costo del flete marítimo">
+            </div>
+
+            <div>
+                <label>Flete 2 (USD):</label>
+                <input id="flete2" type="number" placeholder="Costo del flete terrestre">
+            </div>
+
+            <div>
+                <label>Seguro (% del FOB):</label>
+                <input id="seguro" type="number" placeholder="0.5">
+            </div>
+
+            <div>
+                <label>Gravamen Arancelario (GA %):</label>
+                <input id="ga" type="number" placeholder="Ejemplo: 5, 10, 15">
+            </div>
+
+            <div>
+                <label>Tipo de Cambio (BOB/USD):</label>
+                <input id="tipoCambio" type="number" placeholder="Ejemplo: 11">
+            </div>
         </div>
 
-        <div class="form-group">
-            <label>Cantidad de Productos:</label>
-            <input type="number" id="cantidadProductos" value="">
-        </div>
+        <button onclick="calcular()" class="button">Calcular</button>
 
-        <div class="form-group">
-            <label>Otros Gastos (USD):</label>
-            <input type="number" id="otrosGastos" value="0">
-        </div>
-
-        <div class="form-group">
-            <label>Flete Aéreo (USD):</label>
-            <input type="number" id="flete" value="">
-        </div>
-
-        <div class="form-group">
-            <label>Porcentaje de Seguro (%):</label>
-            <input type="number" id="seguro" value="2">
-        </div>
-
-        <div class="form-group">
-            <label>Gravamen Arancelario (GA %):</label>
-            <input type="number" id="ga" value="">
-        </div>
-
-        <div class="form-group">
-            <label>Tipo de Cambio Paralelo (BOB/USD):</label>
-            <input type="number" id="tipoCambio" value="12.50">
-        </div>
-
+        <div id="resultados"></div>
     </div>
 
-    <button class="btn" onclick="calcular()">Calcular</button>
-
-    <div id="resultados"></div>
-
-</div>
-
-<script src="script.js"></script>
-
+    <script src="maritimo.js"></script>
 </body>
 </html>
